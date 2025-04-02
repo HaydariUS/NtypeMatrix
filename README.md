@@ -11,13 +11,13 @@ Diag(n) = { a ∈ ℤ n×n | ∀ i,j ∈ [1..n]: i≠j → a[i,j]=0 }
 
 Operations
 1. Getting an entry
-Getting the entry i-th row and j-th column (i,j[1..n]): e:=a[i,j].
+Getting the entry i-th row and j-th column (i,j∈[1..n]): e:=a[i,j].
 If i = j, the value is retrieved from the diagonal. if j = 0, it's from the first column. if j = n-1 it's from the last column. For all other cases, the function returns 0.
 
 Formally: 
 A : Ntype(n) × ℤ × ℤ × ℤ 
-          a            I     j      e 
-Pre = ( a=a’  i=i’  j=j’  i,j[1..n] ) 
+          a     I     j      e 
+Pre = ( a=a’  i=i’  j=j’  i,j∈[1..n] ) 
 Post = ( Pre  e=a[i,j] )
 
 2. Setting an entry
@@ -26,7 +26,7 @@ Assigning a value to the i-th row and j-th column. Assignments are only allowed 
 Formally: 
 A = Ntype(n) × ℤ × ℤ × ℤ 
            a              I      j      e 
-Pre = ( e=e’  a=a’  i=i’  j=j’  i,j[1..n]  i=j ) 
+Pre = ( e=e’ ^ a=a’ ^ i=i’ ^ j=j’ ^ i,j[1..n]  i=j ) 
 Post = (e=e’  i=i’  j=j’  a[i,j]=e  k,l[1..n]: (k≠i  l≠j)→ a[k,l]=a’[k,l] )
 
 3. Sum
