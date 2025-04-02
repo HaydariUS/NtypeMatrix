@@ -7,7 +7,7 @@ Implement the N matrix type which contains integers. These are square matrices t
 N type Matrix
 
 Set of values
-Diag(n) = { a ℤ n×n  i,j[1..n]: i≠j → a[i,j]=0 }
+Diag(n) = { a ∈ ℤ n×n | {\displaystyle \forall } i,j ∈ [1..n]: i≠j → a[i,j]=0 }
 
 Operations
 1. Getting an entry
@@ -116,4 +116,3 @@ Testing the operations (black box testing)
 Testing based on the code (white box testing)
 1. Generating different size matrix (-1, 0, 1 and above)
 2. Implementing and showing exceptions
-![image](https://github.com/user-attachments/assets/2d73f6c8-8743-4c23-b23f-c5009427ffbe)
