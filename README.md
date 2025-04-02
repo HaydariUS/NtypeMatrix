@@ -7,7 +7,7 @@ Implement the N matrix type which contains integers. These are square matrices t
 N type Matrix
 
 Set of values
-Diag(n) = { a ∈ ℤ n×n | \forall i,j ∈ [1..n]: i≠j → a[i,j]=0 }
+Diag(n) = { a ∈ ℤ n×n | {\forall} i,j ∈ [1..n]: i≠j → a[i,j]=0 }
 
 Operations
 1. Getting an entry
