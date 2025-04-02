@@ -66,20 +66,6 @@ Implementation
 1. Getting an entry
 Getting the entry of the ith column and jth row (i,j[1..n]) e:=a[i,j] where the matrix is represented by v1,v2,v3,1in, and n stands for the size of the matrix can be implemented as
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
 2. Setting an entry
 Getting the entry of the ith column and jth row (i,j[1..n]) e:=a[i,j] where the matrix is represented by v1,v2,v3,1in, and n stands for the size of the matrix can be implemented as
 
